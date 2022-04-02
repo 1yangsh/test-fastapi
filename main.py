@@ -17,3 +17,8 @@ async def main():
 async def main(user_id):
     return {"message": f"user {user_id} 입니다.",
             "video": "https://www.s3.com"}
+
+
+@app.get("/test")
+async def main():
+    return {"message": "test 입니다."}
